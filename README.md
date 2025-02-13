@@ -7,7 +7,7 @@
 # Solflare Vault Extractor & Decryptor
 ### POC tools to recover, extract and decrypt Solflare Vaults
 _**This toolset is proudly the first to announce support for Recovering Solflare Wallets**_
-- `Do to many of my GitHub projects being copied and sold -- which is in violation of their GNU v2.0 License -- I will not be releasing the source code for this project.`
+- `Do to many of my GitHub projects being copied and sold -- which is in violation of their GPL v2.0 License -- I will not be releasing the source code for this project (yet).`
 - Contact me at https://forum.hashpwn.net/user/cyclone if you need help recovering your Solflare wallet password or seed phrase. 
 
 ### Solflare Vault location for Chrome extensions:

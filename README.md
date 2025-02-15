@@ -18,13 +18,13 @@ _**This toolset is proudly the first to announce support for Recovering Solflare
 ```
 ./solflare_extractor.bin bhhhlbepdkbapadjdnnojkbgioiodbic/
  ----------------------------------------------------- 
-|        Cyclone's Solflare Vault Hash Extractor      |
-|        Use Solflare Vault Decryptor to decrypt      |
-|    https://github.com/cyclone-github/solflare_pwn   |
+|        Cyclone's Solflare Vault Hash Extractor       |
+|        Use Solflare Vault Decryptor to decrypt       |
+|    https://github.com/cyclone-github/solflare_pwn    |
  ----------------------------------------------------- 
 
 Encrypted Solflare Vault:
-{"data":{"digest":"sha256","encoding":"base64","encrypted64":"iYoRET9we/aKBWtefA+6itg8izn6YMLA2WRRkctlzjmmQLAdfDT+VX9VBzuLtp/lBn0zVrs8TVR5DrgOy57+c9vuEu8ohAxdMcGWPn4FON68PEj3N616XsNe0Zcx6zMdGFpoQhatgn0H5mvtBx3vt1/HuWw6jtqX+Ftza/VWngZ62XNg4Jczq7huppxfkbyqsIvPJLoNumprZmmqfY10/Qhgbb9IrKgyYAmSCBG0QDIf3PzflOdiXVD2Baq3UAqqZ89GoB6XQdRyKp/7IG5+nnteih1IgvMTnODxVTuJHAmDm+yWqsW1dP7W+S6NkJeg1ICIUY5jcPG2ULJ6orkrJMIOqzsz8Va7UMzM87SLnhrnibht99cFuXh2V1pG7IJMds1m6ac+zoGT/SsJzooZlfCGFLdGYT30+/ozCCbSrtyNISn9Tvb9+uVPNY3m6eVWNw8FrrkRWPWw4NtyC3fw0YQpx/P8/5ctvgkM+/s63i9AnNQVWwRBQP/a4xnr9LO3vaSgH/bvhXqmnDpxwLpYkbLxprBUsTsDG6o4Ekx5zPDXKjMYBmwzgXWj1q9AJ5JBXPOnFaHLsPPNqL5zbrL9D1VFOniJoUxvqWeobAtl7GEwKb1t8DfZYjZDF4UQENqL4L7p5JVn+XCVMFLk/Vme/JnvX2MkiRLNe/cNLVlKGT7wK+0urEpa0xFUka4At1poFu2XShV3bX7JQcIR3z+aZJ2Bo7UJkgrHX03c9mgCbR7k72tG7uC62zGnDo2QKTo5A0l+aMIsmd0ZTYtDCddlwjAsIiEC4L8mH9ocf5w+qQ==","iterations":100000,"kdf":"pbkdf2","nonce64":"s7D8vko2q/za2X34xcO+S2M+r07lPTkv","salt64":"qa6AWu8JNqC0indVRgG5SA=="},"locked":true}
+$solflare$100000$a9ae805aef0936a0b48a77554601b948$b3b0fcbe4a36abfcdad97df8c5c3be4b633eaf4ee53d392f$898a11113f707bf68a056b5e7c0fba8ad83c8b39fa60c2c0d9645191cb65ce39a640b01d7c34fe557f55073b8bb69fe5067d3356bb3c4d54790eb80ecb9efe73dbee12ef28840c5d31c1963e7e0538debc3c48f737ad7a5ec35ed19731eb331d185a684216ad827d07e66bed071defb75fc7b96c3a8eda97f85b736bf5569e067ad97360e09733abb86ea69c5f91bcaab08bcf24ba0dba6a6b6669aa7d8d74fd08606dbf48aca8326009920811b440321fdcfcdf94e7625d50f605aab7500aaa67cf46a01e9741d4722a9ffb206e7e9e7b5e8a1d4882f3139ce0f1553b891c09839bec96aac5b574fed6f92e8d9097a0d48088518e6370f1b650b27aa2b92b24c20eab3b33f156bb50ccccf3b48b9e1ae789b86df7d705b97876575a46ec824c76cd66e9a73ece8193fd2b09ce8a1995f08614b746613df4fbfa330826d2aedc8d2129fd4ef6fdfae54f358de6e9e556370f05aeb91158f5b0e0db720b77f0d18429c7f3fcff972dbe090cfbfb3ade2f409cd4155b044140ffdae319ebf4b3b7bda4a01ff6ef857aa69c3a71c0ba5891b2f1a6b054b13b031baa38124c79ccf0d72a3318066c338175a3d6af402792415cf3a715a1cbb0f3cda8be736eb2fd0f55453a7889a14c6fa967a86c0b65ec613029bd6df037d962364317851010da8be0bee9e49567f970953052e4fd599efc99ef5f63248912cd7bf70d2d594a193ef02bed2eac4a5ad3115491ae00b75a6816ed974a15776d7ec941c211df3f9a649d81a3b509920ac75f4ddcf668026d1ee4ef6b46eee0badb31a70e8d90293a3903497e68c22c99dd194d8b4309d765c2302c222102e0bf261fda1c7f9c3ea9$d899e2192ab65116a19de312ed578d5d943ca5c46f68ba92be14807f931469688c67bb9e5812fdb3953599f13a0703e2ee9ba3849e358d74d91a6d61e0d0d454be17
 ```
 ### Decryptor usage example:
 ```
@@ -37,11 +37,11 @@ Vault file:     hash.txt
 Valid Vaults:   1
 CPU Threads:    16
 Wordlist:       wordlist.txt
-2025/02/12 11:14:22 Working...
-Hash: {"data":{"digest":"sha256","encoding":"base64","encrypted64":"iYoRET9we/aKBWtefA+6itg8izn6YMLA2WRRkctlzjmmQLAdfDT+VX9VBzuLtp/lBn0zVrs8TVR5DrgOy57+c9vuEu8ohAxdMcGWPn4FON68PEj3N616XsNe0Zcx6zMdGFpoQhatgn0H5mvtBx3vt1/HuWw6jtqX+Ftza/VWngZ62XNg4Jczq7huppxfkbyqsIvPJLoNumprZmmqfY10/Qhgbb9IrKgyYAmSCBG0QDIf3PzflOdiXVD2Baq3UAqqZ89GoB6XQdRyKp/7IG5+nnteih1IgvMTnODxVTuJHAmDm+yWqsW1dP7W+S6NkJeg1ICIUY5jcPG2ULJ6orkrJMIOqzsz8Va7UMzM87SLnhrnibht99cFuXh2V1pG7IJMds1m6ac+zoGT/SsJzooZlfCGFLdGYT30+/ozCCbSrtyNISn9Tvb9+uVPNY3m6eVWNw8FrrkRWPWw4NtyC3fw0YQpx/P8/5ctvgkM+/s63i9AnNQVWwRBQP/a4xnr9LO3vaSgH/bvhXqmnDpxwLpYkbLxprBUsTsDG6o4Ekx5zPDXKjMYBmwzgXWj1q9AJ5JBXPOnFaHLsPPNqL5zbrL9D1VFOniJoUxvqWeobAtl7GEwKb1t8DfZYjZDF4UQENqL4L7p5JVn+XCVMFLk/Vme/JnvX2MkiRLNe/cNLVlKGT7wK+0urEpa0xFUka4At1poFu2XShV3bX7JQcIR3z+aZJ2Bo7UJkgrHX03c9mgCbR7k72tG7uC62zGnDo2QKTo5A0l+aMIsmd0ZTYtDCddlwjAsIiEC4L8mH9ocf5w+qQ==","iterations":100000,"kdf":"pbkdf2","nonce64":"s7D8vko2q/za2X34xcO+S2M+r07lPTkv","salt64":"qa6AWu8JNqC0indVRgG5SA=="},"locked":true}
+2025/02/15 11:52:20 Working...
+Hash: $solflare$100000$a9ae805aef0936a0b48a77554601b948$b3b0fcbe4a36abfcdad97df8c5c3be4b633eaf4ee53d392f$898a11113f707bf68a056b5e7c0fba8ad83c8b39fa60c2c0d9645191cb65ce39a640b01d7c34fe557f55073b8bb69fe5067d3356bb3c4d54790eb80ecb9efe73dbee12ef28840c5d31c1963e7e0538debc3c48f737ad7a5ec35ed19731eb331d185a684216ad827d07e66bed071defb75fc7b96c3a8eda97f85b736bf5569e067ad97360e09733abb86ea69c5f91bcaab08bcf24ba0dba6a6b6669aa7d8d74fd08606dbf48aca8326009920811b440321fdcfcdf94e7625d50f605aab7500aaa67cf46a01e9741d4722a9ffb206e7e9e7b5e8a1d4882f3139ce0f1553b891c09839bec96aac5b574fed6f92e8d9097a0d48088518e6370f1b650b27aa2b92b24c20eab3b33f156bb50ccccf3b48b9e1ae789b86df7d705b97876575a46ec824c76cd66e9a73ece8193fd2b09ce8a1995f08614b746613df4fbfa330826d2aedc8d2129fd4ef6fdfae54f358de6e9e556370f05aeb91158f5b0e0db720b77f0d18429c7f3fcff972dbe090cfbfb3ade2f409cd4155b044140ffdae319ebf4b3b7bda4a01ff6ef857aa69c3a71c0ba5891b2f1a6b054b13b031baa38124c79ccf0d72a3318066c338175a3d6af402792415cf3a715a1cbb0f3cda8be736eb2fd0f55453a7889a14c6fa967a86c0b65ec613029bd6df037d962364317851010da8be0bee9e49567f970953052e4fd599efc99ef5f63248912cd7bf70d2d594a193ef02bed2eac4a5ad3115491ae00b75a6816ed974a15776d7ec941c211df3f9a649d81a3b509920ac75f4ddcf668026d1ee4ef6b46eee0badb31a70e8d90293a3903497e68c22c99dd194d8b4309d765c2302c222102e0bf261fda1c7f9c3ea9
 Password: cyclone
 Seed Phrase: daring rose clump noble element fork differ inform gravity turtle oven iron
-2025/02/12 11:14:25 Decrypted: 1/1 xxxxx.xx h/s 00h:00m:03s
+2025/02/15 11:52:35 Decrypted: 1/1 30185.78 h/s 00h:00m:15s
 
 2025/02/12 11:14:25 Finished
 ```

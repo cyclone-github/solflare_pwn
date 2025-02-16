@@ -5,6 +5,9 @@
 [![GitHub release](https://img.shields.io/github/release/cyclone-github/solflare_pwn.svg)](https://github.com/cyclone-github/solflare_pwn/releases)
 
 # Solflare Vault Extractor & Decryptor
+
+## I posted about a vulnerability I found in the Solflare crypto wallet. Read more info here: https://forum.hashpwn.net/post/416
+
 ### POC tools to recover, extract and decrypt Solflare Vaults
 _**This toolset is proudly the first to announce support for Recovering Solflare Wallets**_
 - `Do to many of my GitHub projects being copied and sold -- which is in violation of their GPL v2.0 License -- I will not be releasing the source code for this project (yet).`

@@ -6,7 +6,7 @@
 
 # Solflare Vault Extractor & Decryptor
 
-## I posted about a vulnerability I found in the Solflare crypto wallet. Read more info here: https://forum.hashpwn.net/post/416
+## Read here for more info about the "xpass" vulnerability discovered by cyclone which allows Solflare wallets to be decrypted without the wallet password: https://forum.hashpwn.net/post/416
 
 ### POC tools to recover, extract and decrypt Solflare Vaults
 _**This toolset is proudly the first to announce support for Recovering Solflare Wallets**_

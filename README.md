@@ -1,4 +1,4 @@
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=cyclone-github&repo=solflare_pwn&theme=gruvbox)](https://github.com/cyclone-github/solflare_pwn/)
+[![Readme Card](https://github-readme-stats-fast.vercel.app/api/pin/?username=cyclone-github&repo=solflare_pwn&theme=gruvbox)](https://github.com/cyclone-github/solflare_pwn/)
 
 [![GitHub issues](https://img.shields.io/github/issues/cyclone-github/solflare_pwn.svg)](https://github.com/cyclone-github/solflare_pwn/issues)
 [![License](https://img.shields.io/github/license/cyclone-github/solflare_pwn.svg)](LICENSE)

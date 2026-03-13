@@ -6,12 +6,21 @@
 
 # Solflare Vault Extractor & Decryptor
 
-## Read here for more info about the "xpass" vulnerability discovered by cyclone which allows Solflare wallets to be decrypted without the wallet password: https://forum.hashpwn.net/post/416
+## Read here for more info about the "xpass" vulnerability discovered by cyclone which allows Solflare wallets to be decrypted without the wallet password using the xpass backdoor master key: https://forum.hashpwn.net/post/416
 
 ### POC tools to recover, extract and decrypt Solflare Vaults
 _**This toolset is proudly the first to announce support for Recovering Solflare Wallets**_
-- `Do to many of my GitHub projects being copied and sold -- which is in violation of their GPL v2.0 License -- I will not be releasing the source code for this project (yet).`
+- `Do not plagiarize or sell any content in this repo as that is a violation of the GPL v2.0 License`
 - Contact me at https://forum.hashpwn.net/user/cyclone if you need help recovering your Solflare wallet password or seed phrase. 
+
+### Install solflare_extractor:
+```
+go install github.com/cyclone-github/solflare_pwn/solflare_extractor@main
+```
+### Install solflare_decryptor:
+```
+go install github.com/cyclone-github/solflare_pwn/solflare_decryptor@main
+```
 
 ### Solflare Vault location for Chrome extensions:
 - Linux: `/home/$USER/.config/google-chrome/Default/Local\ Extension\ Settings/bhhhlbepdkbapadjdnnojkbgioiodbic/`
@@ -48,6 +57,15 @@ Seed Phrase: daring rose clump noble element fork differ inform gravity turtle o
 
 2025/02/12 11:52:35 Finished
 ```
+### xpass exploit mode
+When the extractor finds the `solflarexpass` key in the extension storage, the hash output includes a trailing `$hex` segment. Use the `-x` flag to decrypt without a wordlist:
+
+```
+./solflare_decryptor.bin -h hash.txt -x
+```
+
+**Note:** Cannot use `-x` and `-w` together. 
+
 ### Decryptor exploit usage example:
 ```
  ----------------------------------------------- 
@@ -66,10 +84,12 @@ Seed Phrase: daring rose clump noble element fork differ inform gravity turtle o
 2025/02/12 11:44:37 Finished
 2025/02/12 11:44:37 Decrypted: 1/1 62.09 h/s 00h:00m:00s
 ```
+
 ### Decryptor supported options:
 ```
 -w {wordlist} (omit -w to read from stdin)
 -h {solflare_wallet_hash}
+-x              xpass exploit mode (decrypt without password when vulnerable; cannot use with -w)
 -o {output} (omit -o to write to stdout)
 -t {cpu threads}
 -s {print status every nth sec}
@@ -77,28 +97,13 @@ Seed Phrase: daring rose clump noble element fork differ inform gravity turtle o
 -version (version info)
 -help (usage instructions)
 
+Wordlist mode:
 ./solflare_decryptor.bin -h {solflare_wallet_hash} -w {wordlist} -o {output} -t {cpu threads} -s {print status every nth sec}
 
 ./solflare_decryptor.bin -h solflare.txt -w wordlist.txt -o cracked.txt -t 16 -s 10
 
 cat wordlist | ./solflare_decryptor.bin -h solflare.txt
 
-./solflare_decryptor.bin -h solflare.txt -w wordlist.txt -o output.txt
+xpass exploit mode (using the backdoor xpass master key):
+./solflare_decryptor.bin -h solflare.txt -x
 ```
-<!--
-### Compile from source:
-- This assumes you have Go and Git installed
-  - `git clone https://github.com/cyclone-github/solflare_pwn.git`
-  - solflare_extractor
-  - `cd solflare_pwn/solflare_extractor`
-  - `go mod init solflare_extractor`
-  - `go mod tidy`
-  - `go build -ldflags="-s -w" .`
-  - solflare_decryptor
-  - `cd solflare_pwn/solflare_decryptor`
-  - `go mod init solflare_decryptor`
-  - `go mod tidy`
-  - `go build -ldflags="-s -w" .`
-- Compile from source code how-to:
-  - https://github.com/cyclone-github/scripts/blob/main/intro_to_go.txt
--->
